@@ -12,4 +12,4 @@ Dado que estou a pagina de cadastro
 Quando realizar o cadastro
 | First Name |Last Name|Phone Number|Username|E-mail            |Password|Confirm Password|
 |  Teste     | Teste   | 1111       |  teste | teste@teste.com  |  teste |   teste        |
-Então sera exibido uma mensagem de sucesso
+Então sera exibido uma mensagem de sucesso 
