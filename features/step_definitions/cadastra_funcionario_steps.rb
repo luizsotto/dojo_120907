@@ -1,5 +1,4 @@
 Dado(/^que loguei no site OrangeHRM com usuario "([^"]*)" e senha "([^"]*)"$/) do |arg1, arg2|
-  #pending # Write code here that turns the phrase above into concrete actions
   visit 'http://opensource.demo.orangehrmlive.com/'
   fill_in('txtUsername',:with=>arg1)
   fill_in('txtPassword',:with=>arg2)
@@ -36,7 +35,6 @@ Então(/^sera exibido a pagina que contem os dados pessoais do funcionario cadas
 	full_name_page = first_name+" "+middle_name+" "+last_name
 
 	full_name_in = $first_name_in+" "+$middle_name_in+" "+$last_name_in
- 	binding.pry
  	if full_name_in == full_name_page
    		puts "O funcionario ("+full_name_in+") foi "+$acao+" com sucesso!"
    	else
