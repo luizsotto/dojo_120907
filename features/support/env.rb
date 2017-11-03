@@ -4,6 +4,7 @@ require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
 require 'pry'
+require 'site_prism'
 
 Capybara.register_driver :selenium do |app|
 	capabilities = Selenium::WebDriver::Remote::Capabilities.chrome('chromeOptions' => { 'args' =>['--start-maximized']})
